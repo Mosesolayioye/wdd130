@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Dry Oar Rafting</title>
+    <meta name="description"
+      content="Contact Dry Oar Rafting to ask about trips, reservations, or the website. Call, email, or send a message and our guides will get back to youS.">
+    <meta name="author" content="Olayioye Opeyemi">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Whitewater rafting company logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h1>Dry Oar Rafting</h1>
+            <address>
+                123 Main River Street<br>
+                Kolob, California<br>
+                <a href="tel:+19999999999">+1 999 999 9999</a><br>
+                <a href="mailto:info@dryoar.com">info@dryoar.com</a>
+            </address>
+        </section>
+        <section class="contact-layout">
+            <div class="map-wrap">
+                <iframe class="map" title="Map to Dry Oar Rafting in Kolob, California"
+                  src="https://maps.google.com/maps?q=Kolob%20California&amp;z=12&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen></iframe>
+            </div>
+
+            <form class="contact-form" action="#" method="get">
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com"
+                      required>
+                </div>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="General Inquiry" required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Website Suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-row message-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type here"
+                      required></textarea>
+                </div>
+
+                <label class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+        <section class="team">
+            <h2>We Are Here to Serve You</h2>
+            <div class="team-grid">
+                <figure>
+                    <img src="images/client.jpg" alt="Portrait of Alex Rivera, Lead River Guide">
+                    <figcaption>Alex Rivera, Lead River Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/hero.jpg" alt="Portrait of Jordan Hale, Reservations Manager">
+                    <figcaption>Jordan Hale, Reservations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/logo.jpg" alt="Portrait of Sam Okonkwo, Safety Coordinator">
+                    <figcaption>Sam Okonkwo, Safety Coordinator</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dry Oar Rafting - olayioye opeyemi</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin-square.svg" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
