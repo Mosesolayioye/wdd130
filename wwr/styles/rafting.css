@@ -238,7 +238,6 @@ footer {
     align-items: center;
     gap: 0.4rem;
 }
-}
 
 .contact-form fieldset {
     border: 0;
@@ -280,4 +279,183 @@ footer {
     width: 140px;
     height: 140px;
     object-fit: cover;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* Newsletter and Call to Action */
+.newsletter-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.newsletter,
+.cta {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.newsletter input,
+.newsletter button,
+.button {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.newsletter button,
+.button {
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.button:hover,
+.newsletter button:hover {
+    background: #004999;
+}
+
+/* Make it stack on small screens */
+@media (max-width: 700px) {
+    .newsletter-cta {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Purpose Grid */
+.purpose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.grid-item h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+/* Stack on small screens */
+@media (max-width: 700px) {
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Trips Page */
+.trips-cta {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.trip p {
+    padding: 0 1rem 1rem;
+}
+
+.trips-table {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.trips-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trips-table th,
+.trips-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trips-table th {
+    background: #0066cc;
+    color: white;
+}
+
+/* Stack on smaller screens */
+@media (max-width: 800px) {
+    .trips-grid {
+        grid-template-columns: 1fr;
+    }
 }
